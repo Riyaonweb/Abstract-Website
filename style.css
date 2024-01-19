@@ -1,0 +1,270 @@
+:root{
+    --blue: #4c5fd5;
+    --white: #fff;
+    --black: #000000;
+    --lilac: #dadbf1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+nav{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    padding: 10px;
+    
+}
+.text-side{
+    display: flex;
+    align-items: center;
+   
+}
+.text-side h3{
+    color: var(--white);
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    background-color: var(--lilac);
+}
+.hero h2{
+    font-size: 5.0rem;
+    font-weight: 400;
+}
+.hero input{
+    width: 60%;
+    height: 60px;
+    margin: 20px;
+    font-size: 1.25rem;
+    padding: 10px;
+}
+.bx-search-alt-2{
+    color: white;
+}
+.right{
+  
+   padding-left: 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+.text-side img{
+    padding-right: 20px;
+    border-right: 2px solid white;
+}
+.text-side h3{
+    padding-left: 20px;
+}
+
+#submit{
+    background-color: #000000;
+    color: white;
+    border: 1px solid #fff;
+    padding-block: 10px;
+    padding-right: 15px;
+    padding-left: 20px;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+#sign{
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    padding-block: 10px;
+    padding-right: 15px;
+    padding-left: 20px;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 100px;
+    grid-gap: 50px;
+
+}
+.side{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.text{
+    width: 65%;
+    line-height: 50px;
+}
+.text h2{
+    font-size: 1.5rem;
+}
+.text p{
+    font-size: 1.3rem;
+    line-height: 30px;
+}
+.text a{
+    font-size: 1.3rem;
+}
+.footer{
+    padding: 50px;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 200px 100px;
+}
+
+#one-foot{
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+#two-foot{
+    grid-row: 1/2;
+    grid-column: 3/5;
+}
+#three-foot{
+    grid-row: 1/2;
+    grid-column: 5/7;
+}
+#four-foot{
+    grid-row: 1/2;
+    grid-column: 7/9;
+}
+#five-foot{
+    
+    grid-row: 2/3;
+    grid-column: 9/13;
+}
+#five-foot ul li{
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.foot h3{
+    font-size: 22px;
+    margin: 5px;
+}
+.foot ul li{
+    list-style-type: none;
+    margin: 5px;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    .hero h2{
+        font-size: 4.0rem;
+    }
+    .right{
+        width: 100%;
+    }
+    #icon-side {
+      
+        cursor: pointer;
+       
+    }
+    
+    .bar1, .bar2, .bar3 {
+      border: 1px solid white;
+        width: 30px;
+        margin: 8px;
+        transition: 0.4s;
+    }
+    
+    
+    .change .bar1 {
+        transform: translate(0, 9px) rotate(45deg);
+    }
+    
+    .change .bar2{
+       opacity: 0;
+    }
+    
+    .change .bar3{
+        transform: translate(0, -9px) rotate(-45deg);
+    }
+    
+    nav{
+       
+        flex-direction: column;
+    }
+    .right{
+        padding-bottom: 15px;
+         /* border-bottom: 1px solid #fff; */
+     } 
+     .right.bor{
+        border-bottom: 1px solid #fff;
+     } 
+    .left{
+        display: none;
+        
+    }
+    .left.active{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .left button{
+       margin: 10px;
+        
+    }
+    #submit, #sign{
+        background-color: #000000;
+        color: white;
+        
+        padding-block: 5px;
+       
+        font-size: 22px;
+       border: none;
+        margin-right: 20px;
+    }
+    #submit{
+        border-bottom: 1px solid #dadbf1;
+        border-radius: 0px;
+        padding-block: 20px;
+    }
+    .blogs{
+        grid-template-columns: auto;
+    }
+    .footer{
+        grid-template-columns: auto auto;
+       grid-template-rows: 200px 200px 100px;
+    }
+    #one-foot{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    #two-foot{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    #three-foot{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    #four-foot{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    #five-foot{
+        
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+    #five-foot ul li{
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
